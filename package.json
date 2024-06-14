@@ -1,0 +1,19 @@
+{
+  "name": "math-utils",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Matěj Chalk <matej.chalk@flowup.cz>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/flowup/releases-example-app.git"
+  },
+  "homepage": "https://github.com/flowup/releases-example-app#readme",
+  "bugs": {
+    "url": "https://github.com/flowup/releases-example-app/issues"
+  },
+  "type": "module",
+  "exports": "./src/index.js",
+  "files": [
+    "src"
+  ]
+}
