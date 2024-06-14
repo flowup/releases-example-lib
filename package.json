@@ -1,17 +1,18 @@
 {
-  "name": "math-utils",
+  "name": "@flowup/releases-example-lib",
   "version": "0.0.0",
   "license": "MIT",
   "author": "Matěj Chalk <matej.chalk@flowup.cz>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/flowup/releases-example-lib.git"
+    "url": "git+https://github.com/flowup/releases-example-lib.git"
   },
   "homepage": "https://github.com/flowup/releases-example-lib#readme",
   "bugs": {
     "url": "https://github.com/flowup/releases-example-lib/issues"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
   "type": "module",
@@ -20,7 +21,8 @@
     "src"
   ],
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
