@@ -1,6 +1,6 @@
 import assert from 'node:assert';
 import { describe, it } from 'node:test';
-import { average, sum } from '../src/index.js';
+import { average, sort, sum } from '../src/index.js';
 
 describe('sum', () => {
   it('should sum all numbers', () => {
@@ -15,5 +15,15 @@ describe('sum', () => {
 describe('average', () => {
   it('should calculate average', () => {
     assert.strictEqual(average([1, 2, 3, 4]), 2.5);
+  });
+});
+
+describe('sort', () => {
+  it('should sort numbers in ascending order by default', () => {
+    assert.deepEqual(sort([4, 2, 1, 3]), [1, 2, 3, 4]);
+  });
+
+  it('should sort numbers in descending order if specified', () => {
+    assert.deepEqual(sort([4, 2, 1, 3], 'desc'), [4, 3, 2, 1]);
   });
 });

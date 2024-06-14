@@ -15,3 +15,13 @@ export function sum(values) {
 export function average(values) {
   return sum(values) / values.length;
 }
+
+/**
+ * Sort array by numeric values.
+ * @param {number[]} values Numbers to sort.
+ * @param {'asc' | 'desc'} order Ascending (default) or descending order.
+ * @returns {number[]} Sorted array.
+ */
+export function sort(values, order = 'asc') {
+  return [...values].sort((a, b) => (order === 'desc' ? b - a : a - b));
+}
