@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/flowup/releases-example-lib/compare/v1.1.1...v1.2.0) (2024-06-17)
+
+
+### Features
+
+* implement new median function ([e6f9c46](https://github.com/flowup/releases-example-lib/commit/e6f9c462692ba46633918226f96ebd10305fbc9d))
+
 ## [1.1.1](https://github.com/flowup/releases-example-lib/compare/v1.1.0...v1.1.1) (2024-06-17)
 
 
