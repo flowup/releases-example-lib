@@ -16,6 +16,13 @@ describe('average', () => {
   it('should calculate average', () => {
     assert.strictEqual(average([1, 2, 3, 4]), 2.5);
   });
+
+  it('should throw for empty array', () => {
+    assert.throws(
+      () => average([]),
+      'Cannot calculate average for empty array'
+    );
+  });
 });
 
 describe('sort', () => {
