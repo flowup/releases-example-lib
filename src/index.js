@@ -18,6 +18,18 @@ export function average(values) {
   }
   return sum(values) / values.length;
 }
+/**
+ * Calculated median average of all numbers in array.
+ * @param {number[]} values Numbers to average.
+ * @returns {number} Median of all numbers.
+ */
+export function median(values) {
+  const sorted = sort(values, 'asc');
+  if (sorted.length % 2 === 0) {
+    return average([sorted[sorted.length / 2 - 1], sorted[sorted.length / 2]]);
+  }
+  return sorted[Math.floor(sorted.length / 2)];
+}
 
 /**
  * Sort array by numeric values.
