@@ -13,6 +13,9 @@ export function sum(values) {
  * @returns {number} Average of all numbers.
  */
 export function average(values) {
+  if (values.length === 0) {
+    throw new Error('Cannot calculate average from empty array');
+  }
   return sum(values) / values.length;
 }
 
