@@ -1,6 +1,6 @@
 import assert from 'node:assert';
 import { describe, it } from 'node:test';
-import { average, sort, sum } from '../src/index.js';
+import { average, median, sort, sum } from '../src/index.js';
 
 describe('sum', () => {
   it('should sum all numbers', () => {
@@ -22,6 +22,16 @@ describe('average', () => {
       () => average([]),
       'Cannot calculate average for empty array'
     );
+  });
+});
+
+describe('median', () => {
+  it('should calculate median for odd-length array', () => {
+    assert.strictEqual(median([3, 1, 2]), 2);
+  });
+
+  it('should calculate median for even-length array', () => {
+    assert.strictEqual(median([3, 4, 1, 2]), 2.5);
   });
 });
 
