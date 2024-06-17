@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/flowup/releases-example-lib/compare/v1.1.0...v1.1.1) (2024-06-17)
+
+
+### Bug Fixes
+
+* throw if average called with empty array ([7fb6de4](https://github.com/flowup/releases-example-lib/commit/7fb6de4d3bb1cca8927f7da8c982c1bef337efa1))
+
 # [1.1.0](https://github.com/flowup/releases-example-lib/compare/v1.0.0...v1.1.0) (2024-06-14)
 
 
